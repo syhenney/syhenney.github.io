@@ -31,7 +31,7 @@
             margin: 10px 0 20px;  
         }  
         .logo img {  
-            max-width: 300px; /* Change this value to adjust the image size */  
+            max-width: 350px; /* Change this value to adjust the image size */  
             height: auto;  
             margin: 20px auto;  
         }  
@@ -48,14 +48,14 @@
         .cta-button:hover {  
             background-color: #0056b3;  
         }  
-        /* MP4 video container styling */
+        /* YouTube video container styling */
         .video-container {
             max-width: 750px;
             margin: 20px auto;
         }
-        video {
+        iframe {
             width: 100%;
-            height: auto;
+            height: 450px;
             border: none;
         }
     </style>  
@@ -71,12 +71,9 @@
         <img src="duck.png" alt="DevDucks Logo">  
     </div>  
 
-    <!-- Embed MP4 Video -->
+    <!-- Embed YouTube Video -->
     <div class="video-container">
-        <video controls>
-            <source src="DevDucks Demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe src="https://youtu.be/ZE3V7jaULO4" title="YouTube video" allowfullscreen></iframe>
     </div>
 
     <a class="cta-button" download="devducks.zip" href="devducks.zip" download>Download Here</a>
