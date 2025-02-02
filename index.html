@@ -66,7 +66,13 @@
         .video-message {
             font-size: 1.2em;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 40px;  /* Added more space between the video and this message */
+        }
+        /* Styling for the message above the download button */
+        .download-message {
+            font-size: 1.2em;
+            color: #333;
+            margin: 30px 0;  /* Adds space above and below the download message */
         }
     </style>  
 </head>  
@@ -80,7 +86,7 @@
         </div>
     </header>  
 
-    <!-- Add message above the video -->
+    <!-- Add message above the video with a little more space -->
     <div class="video-message">
         The video below is a demonstration of our extension in action.
     </div>
@@ -93,6 +99,12 @@
         </video>
     </div>
 
+    <!-- Add message above the download button -->
+    <div class="download-message">
+        Click here to download the DevDucks zip file extension
+    </div>
+
+    <!-- Download Button -->
     <a class="cta-button" download="devducks.zip" href="devducks.zip" download>Download Here</a>
 
     <script>  
