@@ -43,6 +43,49 @@
         .cta-button:hover {
             background-color: #0056b3;
         }
+        .alert {
+            color: #d8000c;
+            background-color: #ffbaba;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #d8000c;
+        }
+        .info {
+            color: #31708f;
+            background-color: #d9edf7;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #31708f;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .form-section {
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .button-container {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +94,58 @@
         <p class="slogan">Code Smarter, Not Harder – Get Real-Time AI Feedback, One Quack at a Time!</p>
     </header>
 
-    <div class="logo">DevDucks Photo</div>
+    <div class="alert">
+        You probably want to use an ALIAS record instead.
+    </div>
+
+    <div class="info">
+        Here you can configure custom DNS records for your domain.
+        <a href="#" class="button">More Information</a>
+    </div>
+
+    <div class="form-section">
+        <div class="form-group">
+            <label for="type">Type</label>
+            <select id="type">
+                <option>CNAME - Canonical name record</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="host">Host</label>
+            <input type="text" id="host" placeholder="Leave blank to create a record for the root domain. Use * to create a wildcard.">
+        </div>
+
+        <div class="form-group">
+            <label for="domain">Domain</label>
+            <input type="text" id="domain" value=".devducks.co" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="value">Answer / Value</label>
+            <input type="text" id="value">
+        </div>
+
+        <div class="form-group">
+            <label for="ttl">TTL</label>
+            <input type="number" id="ttl" value="300">
+        </div>
+
+        <div class="form-group">
+            <label for="priority">Priority</label>
+            <input type="number" id="priority">
+        </div>
+
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea id="notes" placeholder="This is for your own use and does not affect DNS."></textarea>
+        </div>
+
+        <div class="button-container">
+            <button class="button">Cancel</button>
+            <button class="button">Add</button>
+        </div>
+    </div>
 
     <a href="#" class="cta-button" id="future-link">Click Here</a>
 
